@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvmainIntro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fbe9e7"
+        android:gravity="center_horizontal"
+        android:text="Welcome to Vora Traders' Official App"
+        android:textColor="#000049"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FFFFFF" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:splitMotionEvents="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <!-- First item  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivMainHoriProduct"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/all_products"
+                    android:isScrollContainer="false"
+                    app:srcCompat="@drawable/product" />
+
+                <TextView
+                    android:id="@+id/tvMainHoriProduct"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/all_products"
+                    android:textColor="#E3EB95"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- Second item  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivMainHoriCart"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/my_cart"
+                    android:isScrollContainer="false"
+                    app:srcCompat="@drawable/cart" />
+
+                <TextView
+                    android:id="@+id/tvMainScrollerCart"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/my_cart"
+                    android:textColor="#E3EB95"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- Third item  -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivMainHoriBalance"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/my_balance"
+                    android:isScrollContainer="false"
+                    app:srcCompat="@drawable/balance_details" />
+
+                <TextView
+                    android:id="@+id/tvMainHoriBalance"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/my_balance"
+                    android:textColor="#E3EB95"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Fourth item  -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivMainHoriTracker"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/track_order"
+                    android:isScrollContainer="false"
+                    app:srcCompat="@drawable/track_my_order" />
+
+                <TextView
+                    android:id="@+id/tvMainHoriTracker"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/track_order"
+                    android:textColor="#E3EB95"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <!-- Fifth item  -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivMainHoriHelp"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/help"
+                    android:isScrollContainer="false"
+                    app:srcCompat="@drawable/help" />
+
+                <TextView
+                    android:id="@+id/tvMainHoriHelp"
+                    android:layout_width="80dp"
+                    android:layout_height="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/help"
+                    android:textColor="#000049"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F2CCBC" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fbe9e7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/ic_new_releases_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvMainOffersHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:text="Our Offer"
+            android:textColor="#1A237E"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fbe9e7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@mipmap/guarantee" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get Guaranteed 5 hour delivery*."
+                android:textColor="#004d40"
+                android:textSize="24sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:text="*All orders recieved before 1pm shall be delivered before 6pm on the same day. All other orders sahll be delivered by 6pm next-day"
+                android:textSize="10sp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#fbe9e7" />
+
+    <TextView
+        android:id="@+id/tvMainCompanies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="20dp"
+        android:background="#FFFFFF"
+        android:text="Company-wise Product Catalog"
+        android:textColor="#000034"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:fadeScrollbars="false"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbarDefaultDelayBeforeFade="1000"
+        android:scrollbarFadeDuration="@android:integer/status_bar_notification_info_maxnum"
+        android:scrollbarSize="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/FirstItem"
+                android:layout_width="match_parent"
+                android:layout_height="105dp"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="Lumax">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="Lumax"
+                    app:srcCompat="@mipmap/lumax" />
+
+                <LinearLayout
+                    android:id="@+id/llLumax"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:tag="Lumax">
+
+                    <TextView
+                        android:id="@+id/tvLumax"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick='onCategorySelect'
+                        android:tag="Lumax"
+                        android:text="Lumax"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:paddingBottom="5px"
+                        android:tag="Lumax"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--Second Company -->
+            <LinearLayout
+                android:id="@+id/SecondItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="Skf">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="Skf"
+                    app:srcCompat="@mipmap/skf_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llSkf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="Skf">
+
+                    <TextView
+                        android:id="@+id/tvSkf"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="Skf"
+                        android:text="SKF"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:paddingBottom="5px"
+                        android:tag="Skf"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- Sixth Company-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="SparkMinda">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="SparkMinda"
+                    app:srcCompat="@mipmap/sparkminda_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llSparkMinda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="SparkMinda">
+
+                    <TextView
+                        android:id="@+id/tvSparkMinda"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="SparkMinda"
+                        android:text="Spark-Minda"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:tag="SparkMinda"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!-- Seventh Company -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="UnoMinda">
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="UnoMinda"
+                    app:srcCompat="@mipmap/uunominda_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llUnoMinda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="UnoMinda">
+
+                    <TextView
+                        android:id="@+id/tvUnoMinda"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="UnoMinda"
+                        android:text="Uno-Minda"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:tag="UnoMinda"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--Third Company -->
+            <LinearLayout
+                android:id="@+id/ThirdItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="Nrb">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="Nrb"
+                    app:srcCompat="@mipmap/nrb_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llNrb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="Nrb">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="Nrb"
+                        android:text="NRB"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:tag="Nrb"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <!--Fourth Company-->
+            <LinearLayout
+                android:id="@+id/FourthItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="Nrb">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="Fag"
+                    app:srcCompat="@mipmap/fag_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llFag"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="Fag">
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="Fag"
+                        android:text="FAG"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:tag="Fag"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--Fifth Company -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:onClick="onCategorySelect"
+                android:orientation="horizontal"
+                android:tag="Makino">
+
+                <ImageView
+                    android:id="@+id/imageVie"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:tag="Makino"
+                    app:srcCompat="@mipmap/makino_logo" />
+
+                <LinearLayout
+                    android:id="@+id/llMakino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:onClick="onCategorySelect"
+                    android:orientation="vertical"
+                    android:tag="Makino">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="match_parent"
+                        android:layout_height="65dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:onClick="onCategorySelect"
+                        android:tag="Makino"
+                        android:text="Makino"
+                        android:textColor="#002400"
+                        android:textSize="28sp"
+                        android:textStyle="bold|italic" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:onClick="onCategorySelect"
+                        android:tag="Makino"
+                        android:text="Guaranteed Quality Automobile Products"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,5 +1,7 @@
 package com.example.v_power;
 
+import java.util.Date;
+
 public class Product {
     private String company;
     private double price;
@@ -9,6 +11,9 @@ public class Product {
     private String OEM;
     private String category;
     public String imageLocation;
+    private Date created;
+    private Date updated;
+    private String objectId;
 
 
     //All constructors
@@ -43,6 +48,32 @@ public class Product {
     }
 
     // getters and setters
+
+
+    public Date getCreated() {
+        return created;
+    }
+
+    public void setCreated(Date created) {
+        this.created = created;
+    }
+
+    public Date getUpdated() {
+        return updated;
+    }
+
+    public void setUpdated(Date updated) {
+        this.updated = updated;
+    }
+
+    public String getObjectId() {
+        return objectId;
+    }
+
+    public void setObjectId(String objectId) {
+        this.objectId = objectId;
+    }
+
     public String getCompany() {
         return company;
     }

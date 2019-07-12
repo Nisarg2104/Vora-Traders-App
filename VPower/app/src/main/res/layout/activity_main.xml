@@ -13,20 +13,18 @@
         android:id="@+id/tvmainIntro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fbe9e7"
+        android:background="@color/colorprimaryLight"
         android:gravity="center_horizontal"
         android:text="Welcome to Vora Traders' Official App"
         android:textColor="#000049"
         android:textSize="16sp"
         android:textStyle="bold" />
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#FFFFFF" />
+
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp"
         android:background="@color/colorPrimary"
         android:splitMotionEvents="false">
 
@@ -63,7 +61,7 @@
                     android:clickable="true"
                     android:gravity="center_horizontal"
                     android:text="@string/all_products"
-                    android:textColor="#E3EB95"
+                    android:textColor="#212121"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -98,7 +96,7 @@
                     android:clickable="true"
                     android:gravity="center_horizontal"
                     android:text="@string/my_cart"
-                    android:textColor="#E3EB95"
+                    android:textColor="#212121"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -133,7 +131,7 @@
                     android:clickable="true"
                     android:gravity="center_horizontal"
                     android:text="@string/my_balance"
-                    android:textColor="#E3EB95"
+                    android:textColor="#212121"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -169,7 +167,7 @@
                     android:clickable="true"
                     android:gravity="center_horizontal"
                     android:text="@string/track_order"
-                    android:textColor="#E3EB95"
+                    android:textColor="#212121"
                     android:textSize="12sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -205,7 +203,7 @@
                     android:clickable="true"
                     android:gravity="center_horizontal"
                     android:text="@string/help"
-                    android:textColor="#000049"
+                    android:textColor="#212121"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -213,21 +211,19 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#F2CCBC" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fbe9e7"
+        android:background="@color/colorprimaryLight"
         android:orientation="horizontal">
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
+            android:background="@color/colorprimaryLight"
             app:srcCompat="@drawable/ic_new_releases_black_24dp" />
 
         <TextView
@@ -237,6 +233,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="20dp"
+            android:background="@color/colorprimaryLight"
             android:text="Our Offer"
             android:textColor="#1A237E"
             android:textSize="24sp"
@@ -246,23 +243,27 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#fbe9e7"
+        android:background="@color/colorprimaryLight"
         android:orientation="horizontal">
+
 
         <ImageView
             android:layout_width="90dp"
             android:layout_height="90dp"
+            android:background="@color/colorprimaryLight"
             app:srcCompat="@mipmap/guarantee" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/colorprimaryLight"
             android:orientation="vertical">
 
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorprimaryLight"
                 android:text="Get Guaranteed 5 hour delivery*."
                 android:textColor="#004d40"
                 android:textSize="24sp"
@@ -273,6 +274,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
+                android:background="@color/colorprimaryLight"
                 android:text="*All orders recieved before 1pm shall be delivered before 6pm on the same day. All other orders sahll be delivered by 6pm next-day"
                 android:textSize="10sp" />
 
@@ -282,11 +284,6 @@
 
     </LinearLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#fbe9e7" />
-
     <TextView
         android:id="@+id/tvMainCompanies"
         android:layout_width="match_parent"
@@ -294,7 +291,7 @@
         android:layout_marginLeft="0dp"
         android:layout_marginTop="25dp"
         android:layout_marginRight="20dp"
-        android:background="#FFFFFF"
+        android:background="@color/normal"
         android:text="Company-wise Product Catalog"
         android:textColor="#000034"
         android:textSize="24sp"
@@ -305,7 +302,7 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#FFFFFF"
+        android:background="@color/normal"
         android:fadeScrollbars="false"
         android:scrollbarAlwaysDrawHorizontalTrack="true"
         android:scrollbarAlwaysDrawVerticalTrack="true"
@@ -318,8 +315,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
             <LinearLayout
-                android:id="@+id/FirstItem"
+                android:id="@+id/llLumax"
                 android:layout_width="match_parent"
                 android:layout_height="105dp"
                 android:clickable="true"
@@ -328,17 +330,17 @@
                 android:tag="Lumax">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/ivLumax"
                     android:layout_width="120dp"
                     android:layout_height="80dp"
                     android:layout_marginTop="15dp"
                     android:clickable="true"
                     android:onClick="onCategorySelect"
                     android:tag="Lumax"
-                    app:srcCompat="@mipmap/lumax" />
+                    app:srcCompat="@mipmap/lumax_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llLumax"
+                    android:id="@+id/llLumax2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -379,10 +381,15 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
 
             <!--Second Company -->
             <LinearLayout
-                android:id="@+id/SecondItem"
+                android:id="@+id/llSkf"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -401,7 +408,7 @@
                     app:srcCompat="@mipmap/skf_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llSkf"
+                    android:id="@+id/llSkf2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -443,9 +450,15 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
 
             <!-- Sixth Company-->
             <LinearLayout
+                android:id="@+id/llSparkMinda"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -464,7 +477,7 @@
                     app:srcCompat="@mipmap/sparkminda_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llSparkMinda"
+                    android:id="@+id/llSparkMinda2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -504,8 +517,15 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
             <!-- Seventh Company -->
             <LinearLayout
+                android:id="@+id/llUnoMinda"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -524,7 +544,7 @@
                     app:srcCompat="@mipmap/uunominda_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llUnoMinda"
+                    android:id="@+id/llUnoMinda2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -565,9 +585,14 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
             <!--Third Company -->
             <LinearLayout
-                android:id="@+id/ThirdItem"
+                android:id="@+id/llNrb"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -586,7 +611,7 @@
                     app:srcCompat="@mipmap/nrb_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llNrb"
+                    android:id="@+id/llNrb2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -626,9 +651,15 @@
                 </LinearLayout>
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
             <!--Fourth Company-->
             <LinearLayout
-                android:id="@+id/FourthItem"
+                android:id="@+id/llFag"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -647,7 +678,7 @@
                     app:srcCompat="@mipmap/fag_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llFag"
+                    android:id="@+id/llFag2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
@@ -688,9 +719,15 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorLine" />
+
 
             <!--Fifth Company -->
             <LinearLayout
+                android:id="@+id/llMakino"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -709,7 +746,7 @@
                     app:srcCompat="@mipmap/makino_logo" />
 
                 <LinearLayout
-                    android:id="@+id/llMakino"
+                    android:id="@+id/llMakino2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"

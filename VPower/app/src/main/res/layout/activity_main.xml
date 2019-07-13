@@ -49,6 +49,7 @@
                     android:clickable="true"
                     android:contentDescription="@string/all_products"
                     android:isScrollContainer="false"
+                    android:onClick="onAllProductClick"
                     app:srcCompat="@drawable/product" />
 
                 <TextView
@@ -84,6 +85,7 @@
                     android:clickable="true"
                     android:contentDescription="@string/my_cart"
                     android:isScrollContainer="false"
+                    android:onClick="mycart"
                     app:srcCompat="@drawable/cart" />
 
                 <TextView
@@ -95,6 +97,7 @@
                     android:layout_marginRight="10dp"
                     android:clickable="true"
                     android:gravity="center_horizontal"
+                    android:onClick="mycart"
                     android:text="@string/my_cart"
                     android:textColor="#212121"
                     android:textSize="12sp"

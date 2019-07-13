@@ -4,17 +4,20 @@ import java.util.Date;
 
 public class Product {
     private String company;
-    private double price;
+    private String price;
     private String name;
-    public int quantity;
-    private String description;
+
+
     private String OEM;
-    private String category;
-    public String imageLocation;
+    private String categoryName;
+
     private Date created;
     private Date updated;
     private String objectId;
 
+    private String ItemCode;
+    private String stdpkg;
+    private  String MOQ;
 
     //All constructors
 
@@ -22,33 +25,35 @@ public class Product {
     public Product() {
     }
 
-    public Product(String company, double price, String name, int quantity, String description, String OEM, String category, String imageLocation) {
-        this.company = company;
-        this.price = price;
-        this.name = name;
-        this.quantity = quantity;
-        this.description = description;
-        this.OEM = OEM;
-        this.category = category;
-        this.imageLocation = imageLocation;
-    }
-
-
-    public Product(String company, double price, String name, int quantity) {
-        this.company = company;
-        this.price = price;
-        this.name = name;
-        this.quantity = quantity;
-    }
-
-    public Product(String company, double price, String name) {
-        this.company = company;
-        this.price = price;
-        this.name = name;
-    }
 
     // getters and setters
 
+
+    public String getMOQ() {
+        return MOQ;
+    }
+
+    public void setMOQ(String MOQ) {
+        this.MOQ = MOQ;
+    }
+
+    public String getStdpkg() {
+        return stdpkg;
+    }
+
+    public void setStdpkg(String stdpkg) {
+        this.stdpkg = stdpkg;
+    }
+
+
+
+    public String getItemCode() {
+        return ItemCode;
+    }
+
+    public void setItemCode(String itemCode) {
+        ItemCode = itemCode;
+    }
 
     public Date getCreated() {
         return created;
@@ -82,11 +87,11 @@ public class Product {
         this.company = company;
     }
 
-    public double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 
@@ -98,21 +103,6 @@ public class Product {
         this.name = name;
     }
 
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public String getOEM() {
         return OEM;
@@ -122,19 +112,13 @@ public class Product {
         this.OEM = OEM;
     }
 
-    public String getCategory() {
-        return category;
+    public String getCategoryName() {
+        return categoryName;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
-    }
-
-    public String getImageLocation() {
-        return imageLocation;
-    }
-
-    public void setImageLocation(String imageLocation) {
-        this.imageLocation = imageLocation;
+    public void setCategoryName(String category) {
+        this.categoryName = category;
     }
 }
+
+

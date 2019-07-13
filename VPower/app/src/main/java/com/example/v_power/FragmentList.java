@@ -50,6 +50,7 @@ public class FragmentList extends ListFragment {
 
 
 
+
         //Assigning Categories to companies
         lumax.Assign(lumax,"Head Light Assy/ H L Glass","Cable","Mirror","Air Filter","Bulb and Halogens","Tail Light Assy","Tail Light Glass","Indicator Assy, Glass and Stay","Stater Relay, Flasher, Buzzer, Horn");
         makino.Assign(makino,"Clutch Plate,Break Shoe, Clutch Hub, Centre, Housing");

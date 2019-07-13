@@ -63,6 +63,7 @@ public class Login extends AppCompatActivity {
                     Backendless.UserService.login(Email, Password, new AsyncCallback<BackendlessUser>() {
                         @Override
                         public void handleResponse(BackendlessUser response) {
+                            TestApplication.user=response;
                             Toast.makeText(Login.this, "Logged in successfully", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(Login.this,MainActivity.class));
                             Login.this.finish();
@@ -103,6 +104,7 @@ public class Login extends AppCompatActivity {
                     Backendless.UserService.restorePassword(Email, new AsyncCallback<Void>() {
                         @Override
                         public void handleResponse(Void response) {
+
                             Toast.makeText(Login.this, "Reset instructions sent to email address", Toast.LENGTH_SHORT).show();
                             showProgress(false);
 
@@ -127,6 +129,7 @@ public class Login extends AppCompatActivity {
                     Backendless.Data.of(BackendlessUser.class).findById(userObjectId, new AsyncCallback<BackendlessUser>() {
                         @Override
                         public void handleResponse(BackendlessUser response) {
+                            TestApplication.user=response;
                             startActivity(new Intent(Login.this, MainActivity.class));
                             Login.this.finish();
 

@@ -7,11 +7,12 @@
         app:showAsAction="never"/>
 
 
-    <item android:id="@+id/place_order"
-        android:title="Place Order"
+    <item
+        android:id="@+id/place_order"
+        android:icon="@drawable/add"
         android:orderInCategory="104"
-        app:showAsAction="always"
-        android:icon="@drawable/add"/>
+        android:title="Place Order"
+        app:showAsAction="always" />
 
 
 

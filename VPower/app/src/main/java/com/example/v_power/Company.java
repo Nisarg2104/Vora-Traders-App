@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 public class Company {
-    private String name;
+    public String name;
     public static class Category{
         public String name;
         public ArrayList<Product> products=new ArrayList<Product>();

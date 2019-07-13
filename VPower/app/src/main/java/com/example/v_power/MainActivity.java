@@ -40,19 +40,14 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId())
-        {
-            case R.id.contact:
-            {
+          int a=item.getItemId();
+          int b=R.id.place_order;
+          if(a==R.id.place_order)
+          {
+              startActivity(new Intent(MainActivity.this, AddProducts.class));
+          }
 
-            }
 
-            case R.id.place_order:
-            {
-
-            }
-
-        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -81,6 +76,20 @@ public class MainActivity extends AppCompatActivity {
             }, (int) (secs * 1000));
 
         }
+        public void onAllProductClick(View v){
+        Intent intent =new Intent(MainActivity.this, DisplayItems.class);
+        intent.putExtra("categoryname","Mirror");
+        intent.putExtra("cname","Lumax");
+        startActivity(intent);
+
+        }
+
+        public void mycart(View v){
+        startActivity(new Intent(MainActivity.this, Cart.class));
+    }
+
+
+
 
 
 }
